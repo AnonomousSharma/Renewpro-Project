@@ -1,0 +1,178 @@
+/* Page Container */
+.anr-page {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Header Section */
+.anr-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.anr-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.anr-introduction {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Awards Section */
+.anr-awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.anr-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.anr-card {
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.anr-card:hover {
+  transform: translateY(-10px);
+}
+
+.anr-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.anr-details {
+  padding: 20px;
+  text-align: left;
+}
+
+.anr-award-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.anr-year {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.anr-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer Section */
+.anr-footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Media Queries for Mobile and Tablet View */
+
+/* Tablet View (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .anr-title {
+    font-size: 2.4rem;
+  }
+
+  .anr-introduction {
+    font-size: 1.1rem;
+  }
+
+  .anr-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .anr-card {
+    margin-bottom: 30px;
+  }
+
+  .anr-award-title {
+    font-size: 1.4rem;
+  }
+
+  .anr-year {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile View (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .anr-title {
+    font-size: 2rem;
+  }
+
+  .anr-introduction {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .anr-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .anr-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .anr-award-title {
+    font-size: 1.2rem;
+  }
+
+  .anr-year {
+    font-size: 0.9rem;
+  }
+
+  .anr-description {
+    font-size: 1rem;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+}

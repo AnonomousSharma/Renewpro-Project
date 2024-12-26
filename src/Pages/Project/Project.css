@@ -1,0 +1,121 @@
+/* Overall Project Container */
+.image-section {
+  width: 100%;
+  height: 300px; /* Set height to 300px */
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%; /* Ensures the image fills the container */
+  object-fit: cover; /* Ensures the image maintains aspect ratio without stretching */
+}
+
+.image-text {
+  position: absolute;
+  top: 50%; /* Centers the text vertically */
+  left: 50%; /* Centers the text horizontally */
+  transform: translate(-50%, -50%); /* Ensures the text is truly centered */
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  text-align: center; /* Centers text horizontally */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4); /* Slight black background for text readability */
+  border-radius: 5px; /* Optional: add border radius for a more modern look */
+}
+
+.image-text h2 {
+  color: #b4dcff;
+}
+
+
+/* Project Section Styling */
+.project-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Details Styling */
+.project-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.project-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1facdf;
+}
+
+.project-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-details ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.project-details ul li strong {
+  color: #000;
+}
+
+/* Project Image Styling */
+.project-image {
+  flex: 1;
+  text-align: center;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Layout for alternating image positions */
+.image-left .project-image {
+  order: -1; /* Moves image to the left */
+}
+
+.image-right .project-image {
+  order: 1; /* Moves image to the right */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .project-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-left .project-image,
+  .image-right .project-image {
+    order: 0; /* Resets order for smaller screens */
+  }
+}

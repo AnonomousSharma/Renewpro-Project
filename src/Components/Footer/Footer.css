@@ -1,0 +1,103 @@
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 22px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+  
+}
+
+.footer-section h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #0099cc;
+}
+.footer-section ul li{
+  line-height: 0.5;
+  font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 18px;
+  line-height: 1.8;
+  color: white;
+}
+
+.footer-section a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.footer-section a:hover {
+  color: #3399cc;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #222;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+.social-media-links-footer{
+  display: inline-flex;
+  gap: 5px;
+
+}
+.logo-container-footer {
+  background-color: white; /* White background for better visibility */
+  padding: 5px 15px; /* Adjust padding for spacing around the logo */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.logo-container-footer:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+}
+
+/* Optional: Adding a subtle rotation animation */
+.logo-container-footer:hover {
+  transform: scale(1.05) rotate(3deg); /* Slight rotation for a playful effect */
+}
+
+
+.logo {
+  height: 60px;
+  object-fit: contain; /* Keep the aspect ratio of the logo */
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    padding: 10px 0;
+    text-align: center;
+  }
+}

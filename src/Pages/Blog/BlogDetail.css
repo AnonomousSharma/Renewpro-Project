@@ -1,0 +1,107 @@
+/* Blog Detail Section */
+.blog-detail {
+  padding: 40px;
+  background-color: #f9f9f9; /* Lighter background for better contrast */
+  max-width: 900px;
+  margin: 40px auto; /* Center the blog */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding subtle shadow for better depth */
+  border-radius: 8px;
+}
+
+/* Back Button */
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Title Styling */
+.blog-detail h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #003f6f;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  text-align: center; /* Center align the title */
+}
+
+/* Content Section */
+.blog-content {
+  color: #333; /* Darker text for better readability */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.blog-content h2 {
+  font-size: 28px;
+  color: #005a9c;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #005a9c; /* Underline for section titles */
+  padding-bottom: 5px;
+}
+
+.blog-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.blog-content ul {
+  padding-left: 20px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.blog-content li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Add some spacing for overall structure */
+.blog-content {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Hyperlinks in the blog */
+.blog-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.blog-content a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-detail {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .blog-detail h1 {
+    font-size: 30px;
+  }
+
+  .blog-content h2 {
+    font-size: 24px;
+  }
+
+  .blog-content p {
+    font-size: 16px;
+  }
+}

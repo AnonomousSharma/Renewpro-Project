@@ -1,0 +1,79 @@
+/* General Container Styles */
+.onm-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  color: #333;
+}
+
+/* Top Image */
+.top-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+/* Main Content Section */
+.content-section {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Individual Service Sections */
+.service-section {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-section:hover {
+  transform: translateY(-10px);
+}
+
+h2 {
+  color: #00539c;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Section Image Styles */
+.section-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+ul li strong {
+  color: #00539c;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column; /* Stack the sections vertically on smaller screens */
+  }
+}

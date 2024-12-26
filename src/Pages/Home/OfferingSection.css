@@ -1,0 +1,77 @@
+/* General Section Styling */
+.offerings-section {
+  padding: 50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.offerings-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  position: relative;
+}
+
+.offerings-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #a6d034; /* Green Line */
+  margin: 10px auto;
+}
+
+/* Grid Styling */
+/* Grid Styling for 3 Items Per Row */
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 columns */
+  gap: 20px; /* Space between cards */
+  margin-top: 30px;
+}
+
+/* Responsive Adjustment for Smaller Screens */
+@media (max-width: 1024px) {
+  .offerings-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .offerings-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 item per row on small screens */
+  }
+}
+
+/* Card Styling */
+.offering-card {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offering-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.offering-card img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.offering-card h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.offering-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
